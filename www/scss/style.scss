@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixin";
+html {
+  background-color: #caedfb;
+}
+
+.header {
+  background-color: $primary-color;
+  margin-bottom: auto;
+  border-radius: 10px;
+  .row {
+    padding-top: 2%;
+    .col {
+      img {
+        margin-bottom: 1em;
+      }
+      .title {
+        color: $color !important;
+        padding-right: 5%;
+      }
+    }
+  }
+}
+
+.card {
+  width: auto;
+}
+
+#formularioLugar {
+  margin: auto;
+  display: block;
+  form {
+    @include padding-xy($padding-x, $padding-y);
+    input {
+      margin: 2%;
+    }
+  }
+}
+
+#btnSaverMas {
+  @include padding-xy($padding-x, $padding-y);
+  margin: 2%;
+}

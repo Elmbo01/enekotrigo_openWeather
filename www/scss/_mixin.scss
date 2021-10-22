@@ -1,0 +1,16 @@
+@mixin padding-xy($x, $y) {
+  padding-top: $y;
+  padding-bottom: $y;
+  padding-left: $x;
+  padding-right: $x;
+}
+
+@mixin gradient-bga($color1: null, $color2: null, $color3: null) {
+  background-color: $color1;
+
+  @if ($color3 == null) {
+    background: linear-gradient(90deg, $color1 0%, $color2 100%);
+  } @else {
+    background: linear-gradient(90deg, $color1 0%, $color2 35%, $color3 100%);
+  }
+}

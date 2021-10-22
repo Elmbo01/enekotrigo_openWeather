@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="scss/bootstrap.min.css" rel='stylesheet' type='text/css'>
+    <link href="scss/style.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>weather is sweet yeah!</title>
+  </head>
+<body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark collapse" id="menu">
+          <div
+            class="
+              d-flex
+              flex-column
+              align-items-center align-items-sm-start
+              px-3
+              pt-2
+              text-white
+              min-vh-100
+            "
+          >
+            <p
+              class="
+                d-flex
+                align-items-center
+                pb-3
+                mb-md-0
+                me-md-auto
+                text-white text-decoration-none
+              "
+            >
+              <span class="fs-5 d-none d-sm-inline">Menu</span>
+        </p>
+            <ul
+              class="
+                nav nav-pills
+                flex-column
+                mb-sm-auto mb-0
+                align-items-center align-items-sm-start
+              "
+              id="menu"
+            >
+              <li class="nav-item">
+                <a href="#" id="homeMenu" class="nav-link align-middle px-0">
+                  <i class="fs-4 bi-house"></i>
+                  <span class="ms-1 d-none d-sm-inline">Home</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#submenu1"
+                  data-bs-toggle="collapse"
+                  class="nav-link px-0 align-middle"
+                  id="buscarMenu"
+                >
+                  <i class="bi bi-map"></i>
+                  <span class="ms-1 d-none d-sm-inline">Buscar</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-0 align-middle" id="btnGPS">
+                  <i class="bi bi-geo-alt"></i>
+                  <span class="ms-1 d-none d-sm-inline">GPS</span></a
+                >
+              </li>
+            <hr />
+  
+          </div>
+        </div>
+  <div class="col">
+        <div class="container header">
+          <div class="row">
+            <div class="col">
+              <img id="imgMenu"src="img/icon.png">
+            </div>
+            <div class="col">
+              <h2 class="title">Weather Is Sweet Yeah!</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <p>Esto es una web en la que podras buscr el tiempo que hace en tiempo real en la ciudqad que quieras.(El logo es utilizado para plegar y desplegr el menu)</p>
+        </div>
+        <div class="container" id="formularioLugar">
+          <form id="form">
+            <input type="text" id="txtLugar">
+            <input type="button" value="Buscar" id="btnBuscar">
+          </form>
+          <div class="container" id="resultado"></div>
+          <div><input type="button" value="Saber Mas" id="btnSaverMas" class="btn btn-primary"></div>
+          <div class="container" id="saverMas"></div>
+      </div>
+    </div>
+  </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/scriptWeather.js"></script>
+  </body>
+</html>

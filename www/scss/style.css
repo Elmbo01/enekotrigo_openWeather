@@ -1,0 +1,37 @@
+html {
+  background-color: #caedfb; }
+
+.header {
+  background-color: #a3dce6;
+  margin-bottom: auto;
+  border-radius: 10px; }
+  .header .row {
+    padding-top: 2%; }
+    .header .row .col img {
+      margin-bottom: 1em; }
+    .header .row .col .title {
+      color: black !important;
+      padding-right: 5%; }
+
+.card {
+  width: auto; }
+
+#formularioLugar {
+  margin: auto;
+  display: block; }
+  #formularioLugar form {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em; }
+    #formularioLugar form input {
+      margin: 2%; }
+
+#btnSaverMas {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 2%; }
+
+/*# sourceMappingURL=style.css.map */
